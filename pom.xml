@@ -9,7 +9,7 @@
 		<relativePath></relativePath>
 	</parent>
 	<artifactId>haohope-bom</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>pom</packaging>
 	<name>Haohope BOM</name>
 	<url>https://github.com/xiongxcodes/haohope-bom</url>
@@ -85,7 +85,7 @@
 		<mybatis.pageable.core.version>1.0.7.RELEASE</mybatis.pageable.core.version>
 		<caffeine.version>2.8.5</caffeine.version>
 
-		<haohope-distributedlock.version>1.0.0</haohope-distributedlock.version>
+		<haohope-distributedlock.version>1.0.1</haohope-distributedlock.version>
 	</properties>
 	<description>
         Modules to centralize common resources and configuration for "haohope components" Maven builds.
