@@ -85,7 +85,14 @@
 		<mybatis.pageable.core.version>1.0.7.RELEASE</mybatis.pageable.core.version>
 		<caffeine.version>2.8.5</caffeine.version>
 
+
+		<!-- poi start -->
+		<poi.version>4.1.2</poi.version>
+		<dom4j.version>1.6.1</dom4j.version>
+		<easypoi.version>4.2.0</easypoi.version>
+		<!-- poi end -->
 		<haohope-distributedlock.version>1.0.1</haohope-distributedlock.version>
+		<haohope-oss.version>1.0.0</haohope-oss.version>
 	</properties>
 	<description>
         Modules to centralize common resources and configuration for "haohope components" Maven builds.
@@ -224,6 +231,18 @@
 				<artifactId>minbox-security</artifactId>
 				<version>${minbox-security.version}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>com.github.xiongxcodes</groupId>
+				<artifactId>haohope-oauth</artifactId>
+				<version>${haohope-oss.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.xiongxcodes</groupId>
+				<artifactId>haohope-security</artifactId>
+				<version>${haohope-oss.version}</version>
+			</dependency>
+
 			<dependency>
 				<groupId>org.minbox.framework</groupId>
 				<artifactId>minbox-sequence</artifactId>
@@ -540,6 +559,69 @@
 				<artifactId>hutool-all</artifactId>
 				<version>${hutool.version}</version>
 			</dependency>
+			<!-- poi start -->
+			<dependency>
+				<groupId>dom4j</groupId>
+				<artifactId>dom4j</artifactId>
+				<version>${dom4j.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi</artifactId>
+				<version>${poi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-excelant</artifactId>
+				<version>${poi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-ooxml</artifactId>
+				<version>${poi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-scratchpad</artifactId>
+				<version>${poi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-ooxml-schemas</artifactId>
+				<version>${poi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>ooxml-schemas</artifactId>
+				<version>1.4</version>
+			</dependency>
+			<dependency>
+				<groupId>cn.afterturn</groupId>
+				<artifactId>easypoi-base</artifactId>
+				<version>${easypoi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>cn.afterturn</groupId>
+				<artifactId>easypoi-annotation</artifactId>
+				<version>${easypoi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>cn.afterturn</groupId>
+				<artifactId>easypoi-web</artifactId>
+				<version>${easypoi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>cn.afterturn</groupId>
+				<artifactId>easypoi-spring-boot-starter</artifactId>
+				<version>${easypoi.version}</version>
+			</dependency>
+			<!-- poi end -->
 			<dependency>
 				<groupId>com.github.xiongxcodes</groupId>
 				<artifactId>haohope-distributedlock-annotation</artifactId>
