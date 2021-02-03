@@ -9,7 +9,7 @@
 		<relativePath></relativePath>
 	</parent>
 	<artifactId>haohope-bom</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<packaging>pom</packaging>
 	<name>Haohope BOM</name>
 	<url>https://github.com/xiongxcodes/haohope-bom</url>
@@ -92,7 +92,7 @@
 		<easypoi.version>4.2.0</easypoi.version>
 		<!-- poi end -->
 		<haohope-distributedlock.version>1.0.1</haohope-distributedlock.version>
-		<haohope-oss.version>1.0.1</haohope-oss.version>
+		<haohope-oss.version>1.0.2</haohope-oss.version>
 	</properties>
 	<description>
         Modules to centralize common resources and configuration for "haohope components" Maven builds.
